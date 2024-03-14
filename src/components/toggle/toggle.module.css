@@ -1,0 +1,74 @@
+.toggleWrapper {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    height: 100px;
+    background: #dddee0;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.toggleOn {
+    width: 94px;
+    height: 40px;
+    border-radius: 50px;
+    background: rgb(42, 134, 32);
+    padding: 3px;
+    position: relative;
+    display: flex;
+    outline: inset 1px rgba(32, 74, 27, 0.8);
+    transition-delay: .85s;
+}
+
+.toggleOn.toggleOff {
+    
+    transition-delay: .85s;
+    background: rgb(173, 1, 1);
+}
+
+.bgLeft {
+    background: whitesmoke;
+    width: 40px;
+    height: 100%;
+    border-radius: 50px;
+    z-index: 10;
+    position: relative;
+    left: 0px;
+    box-shadow: 5px 1px 2px 0px rgba(0,0,0,0.1), 0px 10px 15px -3px rgba(0,0,0,0.1);
+    
+    outline: inset 1px rgba(29,86,23,.5);
+
+    transition: left .5s ease .5s;
+}
+
+.bgRight {
+    left: 54px;
+}
+
+.hide {
+    transition-delay: .8s;
+    opacity: 0;
+}
+
+
+
+.text {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    opacity: .4;
+}
+
+
+
+.text span {
+    display: inline-block;
+    
+    z-index: 2;
+}
