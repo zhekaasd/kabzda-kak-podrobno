@@ -17,12 +17,12 @@
     position: relative;
     display: flex;
     outline: inset 1px rgba(32, 74, 27, 0.8);
-    transition-delay: .85s;
+    transition-delay: .6s;
 }
 
 .toggleOn.toggleOff {
     
-    transition-delay: .85s;
+    transition-delay: .6s;
     background: rgb(173, 1, 1);
 }
 
@@ -38,7 +38,8 @@
     
     outline: inset 1px rgba(29,86,23,.5);
 
-    transition: left .5s ease .5s;
+    transition: left .4s ease .4s;
+    cursor: pointer;
 }
 
 .bgRight {
@@ -50,6 +51,11 @@
     opacity: 0;
 }
 
+.show {
+    transition-delay: .45s;
+    opacity: 1;
+}
+
 
 
 .text {
@@ -58,7 +64,7 @@
     top: 9px;
     font-size: 1.5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -69,6 +75,5 @@
 
 .text span {
     display: inline-block;
-    
     z-index: 2;
 }

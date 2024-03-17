@@ -5,17 +5,17 @@ import AccordionTitle from './AccordionTitle';
 type AccordionPropsType = {
   title: string
   isCollapsed: boolean
+  toggleCollapsed: (value: boolean) => void
 };
 
 function Accordion(props: AccordionPropsType) {
   console.log("Accordion render");
 
-  
-  const [isCollapsed, setIsCollapsed] = useState(props.isCollapsed);
+  const {title, isCollapsed, toggleCollapsed} = props;
 
   return (
     <div>
-      <AccordionTitle title={props.title} toggleCollapsed={setIsCollapsed} isCollapsed={isCollapsed} />
+      <AccordionTitle title={title} toggleCollapsed={toggleCollapsed} isCollapsed={isCollapsed} />
       { !isCollapsed && <AccordionBody /> }
     </div>
   );
